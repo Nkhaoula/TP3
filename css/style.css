@@ -1,0 +1,96 @@
+@import url('https://fonts.google.com/specimen/Exo font-family:"Exo", sans-serif');
+
+html, body{ 
+    margin : 10px; 
+    padding: 10px; 
+    font-family:"Exo", sans-serif; 
+}
+.flex {
+    display:flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex; 
+    background-color: #010645
+}
+nav ul{ 
+    margin:0 auto;
+    padding: 0 auto;
+}
+nav ul li{
+    display: inline; 
+    list-style: none;
+    margin: auto 7em;
+}
+    nav ul li a{
+    text-decoration: none; 
+    color:white;
+    font-weight: 500;
+    line-height: 40px;
+}
+.compte{
+    background-color: 	#FF71C6;
+    color:white;
+    text-decoration: none;
+}
+.article{
+    text-align:justify;
+}
+.col-m{
+    text-align: center;
+}
+.imgBandeau {
+	display: block;
+	margin: auto;
+	width: 75%;
+    padding: 1%;
+}
+.Qui{
+	flex-wrap: wrap;
+    width: 48%;
+}   
+.last, li{
+    display:flex;
+    justify-content: space-between; 
+    color:white;
+    font-weight: 500;
+    line-height: 40px;
+    background-color: #010645;
+    text-decoration: none;  
+}
+.col-6{
+    width: 20%;
+}
+.gout{
+    border-top:solid;
+    border-color: #010645;
+    padding: 2%;  
+    justify-content: space-around
+}
+@media screen and (max-width: 430px) {
+	header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gout{
+            display:inline;
+            flex-direction: column; 
+            align-items: center;          
+    }  
+    .imgBandeau{
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    } 
+   .col-3, .col-6{
+    width: 100%;
+   }
+}
+
